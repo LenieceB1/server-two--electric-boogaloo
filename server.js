@@ -5,7 +5,7 @@ const PORT = 8080;
 
 app.use(bodyParser.urlencoded({extended: false}));
 //Treys code lol
-
+app.use(express.static('bios'))
 app.get('/', (req, res) => {
   res.sendfile('bios/index.html');
 });

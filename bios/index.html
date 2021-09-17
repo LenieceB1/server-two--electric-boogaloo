@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+  <link rel="stylesheet" href="static/styles.css">
 </head>
 <body>
 
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
-<p><a href="file:///C:/Users/PFink/OneDrive%20-%20York%20County%20School%20of%20Technology/Documents/server%20two-%20electric%20boogaloo/bios/index.html">About<a></p>
+<h1>Michaelsoft</h1>
+<p>Click the following to go to a companies about page</p>
+<a href="static/trey.html">Trey Floto</a> <br>
+<a href="static/parker.html">Parker Fink</a> <br>
+<a href="static/leniece.html">Leniece Bennett</a> <br>
+<a href="static/Logan.html">Logan Hiller</a> <br>
+
+<p id="one"></p>
+<button onclick="random()">Random</button>
+
+<script>
+ function random(){
+
+document.getElementById("one").innerHTML = Math.floor(Math.random() * 10);
+}
+</script>
 
 </body>
 </html>
